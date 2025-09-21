@@ -160,7 +160,7 @@
         }
         
         .price {
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 5vw, 2.5rem);
             font-weight: bold;
             color: var(--primary-color);
             margin: 20px 0;
@@ -288,8 +288,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="fas fa-chart-line me-2"></i>Aurora Media
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="aurora_logo.png" alt="Aurora Media Logo" height="45" class="me-2">Aurora Media
             </a>
             <div class="d-flex">
                 <a href="#contact" class="btn btn-outline-light">Get Started</a>
@@ -304,22 +304,22 @@
                 <div class="col-lg-6 hero-content">
                     <h1 class="display-4 fw-bold mb-4">Scale Your Dermatology Practice to $50k+ Monthly Revenue</h1>
                     <p class="lead mb-4">Specialized Google & Facebook Ads for dermatologists and cosmetic clinics already earning $15k-20k/month. Get more quality leads and appointments with our proven system.</p>
-                    <div class="qualification-badge">✓ 7-Day Free Trial (14 days free for quick decisions maker)</div>
+                    <div class="qualification-badge">✓ <del>7-Days</del> 14 Days Free Trial for quick decision makers</div>
                     <div class="qualification-badge">✓ For Clinics Making $15k-$20k+ Monthly</div>
                     <div class="qualification-badge">✓ Proven ROI System</div>
-                    <div class="mt-4">
-                        <a href="https://www.instagram.com/_.amelia.demill._/?hl=es" target="_blank" class="btn btn-primary-custom btn-lg me-3 mb-4">Start Free Trial</a>
-                        <a href="https://www.instagram.com/_.amelia.demill._/?hl=es" target="_blank" class="instagram-link mb-4">
+                    <div class="mt-4 d-flex">
+                        <!-- <a href="https://www.instagram.com/_.amelia.demill._/?hl=es" target="_blank" class="btn btn-primary-custom btn-lg me-md-3 mb-3 mb-md-0">Start Free Trial</a> -->
+                        <a href="https://www.instagram.com/_.amelia.demill._/?hl=es" target="_blank" class="instagram-link">
                             <i class="fab fa-instagram"></i>
                             Chat with Amelia
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
+                <!-- <div class="col-lg-6 text-center">
                     <div class="hero-image">
                         <i class="fas fa-chart-area" style="font-size: 15rem; opacity: 0.3;"></i>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -479,19 +479,19 @@
                     <div class="pricing-card">
                         <h3 class="text-center">Monthly Plan</h3>
                         <div class="price text-center">
-                            $3,000 <small>- $5,000/month</small>
+                            $3,000 - $5,000
                         </div>
                         <ul class="feature-list">
                             <li>Custom Google Ads Strategy</li>
                             <li>Facebook & Instagram Ads</li>
-                            <li><strong>7-Day Free Trial</strong></li>
+                            <li><strong>7-Days Free Trial</strong></li>
                             <li>Landing Page Optimization</li>
                             <li>Monthly Performance Reports</li>
                             <li>Dedicated Account Manager</li>
                             <li>A/B Testing & Optimization</li>
                         </ul>
                         <div class="text-center">
-                            <a href="#contact" class="btn btn-outline-primary btn-lg">Get Started</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -507,7 +507,7 @@
                         <ul class="feature-list">
                             <li>Everything in Monthly Plan</li>
                             <li><strong>2 Months Completely FREE</strong></li>
-                            <li><strong>7-Day Free Trial (14 days for quick decisions)</strong></li>
+                            <li><strong>7-Days Free Trial (14 Days for quick decisions)</strong></li>
                             <li>Priority Support & Strategy Calls</li>
                             <li>Advanced Analytics Dashboard</li>
                             <li>Quarterly Business Reviews</li>
@@ -515,7 +515,7 @@
                             <li><strong>Referral Bonus: +1 Month FREE</strong></li>
                         </ul>
                         <div class="text-center">
-                            <a href="#contact" class="btn btn-primary-custom btn-lg">Best Value - Start Now</a>
+                            <a href="#contact" class="btn btn-primary-custom btn-lg">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -537,25 +537,16 @@
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
                     <h2 class="section-title text-white">Ready to Scale Your Practice?</h2>
-                    <p class="lead text-white-50 mb-4">Start with our free trial and see results in your first week. Quick decision makers get an extended 14-day trial!</p>
+                    <p class="lead text-white-50 mb-4">Start with our free trial and see results in your first week. Quick decision makers get an extended 14-days trial!</p>
                     
-                    <div class="row mb-5">
-                        <div class="col-md-6 mb-4">
-                            <div class="bg-white bg-opacity-10 p-4 rounded-3">
-                                <h4 class="text-white mb-3"><i class="fas fa-clock me-2"></i>7-Day Free Trial</h4>
-                                <p class="text-white-50 mb-3">Perfect for evaluating our service and seeing initial results</p>
-                                <a href="https://www.instagram.com/_.amelia.demill._/?hl=es" target="_blank" class="btn btn-primary-custom">
-                                    Start 7-Day Trial
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-6">
                             <div class="bg-white bg-opacity-10 p-4 rounded-3 position-relative">
                                 <div class="badge bg-success position-absolute top-0 start-50 translate-middle">BEST DEAL</div>
-                                <h4 class="text-white mb-3"><i class="fas fa-rocket me-2"></i>14-Day Free Trial</h4>
+                                <h4 class="text-white mb-3"><i class="fas fa-rocket me-2"></i><del>7-Days</del> 14-Days Free Trial</h4>
                                 <p class="text-white-50 mb-3">For quick decision makers ready<br> to scale fast</p>
                                 <a href="https://www.instagram.com/_.amelia.demill._/?hl=es" target="_blank" class="btn btn-primary-custom">
-                                    Get 14-Day Trial
+                                    Get 14-Days Trial
                                 </a>
                             </div>
                         </div>
